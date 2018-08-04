@@ -7,6 +7,7 @@ import os
 
 ##### Hide lines below until Lab 4
 import wandb
+wandb.init()
 
 from training.gpu_manager import GPUManager
 ##### Hide lines above until Lab 4
