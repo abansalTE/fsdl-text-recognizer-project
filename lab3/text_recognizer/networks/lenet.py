@@ -9,7 +9,7 @@ def lenet(input_shape: Tuple[int, ...], output_shape: Tuple[int, ...]) -> Model:
     num_classes = output_shape[0]
 
     ##### Your code below (Lab 2)
-    dropout = 0.2
+    dropout = 0.3
     model = Sequential()
     if len(input_shape) < 3:
         model.add(Lambda(lambda x: tf.expand_dims(x, -1), input_shape=input_shape))
